@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+            <!-- Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+
+  </head>
+  <body ng-app="starter">
+
+    <ion-pane>
+      <ion-header-bar class="bar-stable">
+        <h1 class="title">Ionic Blank Starter</h1>
+      </ion-header-bar>
+      <ion-content>
+                  <div class="input-group" id="todo-new">
+                <input id="todo-add-item" type="text" class="form-control" placeholder="Nouveau">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-primary" onclick="app.addItem()">Ajouter</button>
+                </span>
+            </div>
+
+            <table class="table table-striped" id="todo-table">
+                <tr class="todo-item-row">
+                    <td class="todo-item-cell">
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <input type="checkbox" aria-label="...">
+                            </span>
+                            <input type="text" class="form-control" aria-label="..">
+                            <span class="input-group-btn">
+                                <button class="btn btn-info" type="button">Modifier</button>
+                                <button class="btn btn-danger" type="button">Supprimer</button>
+                            </span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <button onclick="app.getItems()" type="button" class="btn btn-default btn-md btn-block">Actualiser</button>
+
+        </div>
+
+        <script type="text/javascript" src="js/api.js"></script>
+        <script type="text/javascript" src="js/view.js"></script>
+
+
+      </ion-content>
+    </ion-pane>
+  </body>
+</html>
