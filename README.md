@@ -1,5 +1,6 @@
 # ionic application for IBM MobileFirst Services on IBM Bluemix
-
+##The readme is available in french in README-FR.md
+##Ce README est disponible en français dans README-FR.md
 This projet contains a ionic project that you can use to learn.
 
 ### Create your mobile backend in Bluemix
