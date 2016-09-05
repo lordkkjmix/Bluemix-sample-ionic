@@ -6,7 +6,11 @@ This projet contains a ionic project that you can use to learn.
 
 1. In the Boilerplates section of the Bluemix catalog, click MobileFirst Services Starter.
 2. Enter a name and host for your app and click Create.
-3. Click Finish. 
+3. Click Finish.
+### Create your projet 
+```Bash
+ionic start myproject blank
+```
 
 ### Downloading the sample
 
@@ -15,7 +19,7 @@ Clone the samples with the following command:
 ```Bash
 git clone https://github.com/lordkkjmix/Bluemix-sample-ionic
 ```
-	
+###Replace your ionic www folder by cloned www folder	
 ### Add the native platforms to your app
 
 Navigate into your project directory and run the following commands:
@@ -54,7 +58,7 @@ guid: "<APPLICATION_GUID>",
 
 Now you can run your application in your mobile emulator or on your device.
 
-1. Build the Cordova app. From your terminal enter the following command:
+1. Build the ionic app. (no need if your run)From your terminal enter the following command:
 
 	```Bash
 	ionic build ios
@@ -79,7 +83,7 @@ Check the following items:
 - Verify that you correctly pasted the route and GUID values.
 - Check the Xcode or Android debug log for more information.
 - Check the status of your App in Bluemix.
-
+***Browser can run cordova plugin and make error "Undefined file"*** 
 ### License
 
 This package contains sample code provided in source code form. The samples are licensed under the under the Apache License, Version 2.0 (the "License"). You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 and may also view the license in the license.txt file within this package. Also see the notices.txt file within this package for additional notices.
